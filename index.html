@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Jbril S. Nalagon | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">KEN <span> JBRIL.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Student & Developer</span>
+                <h1>Ken Jbril S. <br>Nalagon</h1>
+                <p>Building modern web and mobile experiences at the University of Science and Technology of Southern Philippines.</p>
+                <div class="hero-btns">
+                    <a href="#works" class="btn">View Works</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="slideshow-container">
+                    <img src="profile1.jpg" class="mySlides fade" alt="Ken Jbril 1">
+                    <img src="profile2.jpg" class="mySlides fade" alt="Ken Jbril 2">
+                    <img src="profile3.jpg" class="mySlides fade" alt="Ken Jbril 3">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container bg-section">
+        <div class="about-grid">
+            <div class="about-info">
+                <h2 class="section-title" style="text-align: left;">About Me</h2>
+                <p class="bio">
+                    I am a 22-year-old student at the <strong>University of Science and Technology of Southern Philippines (USTP)</strong>. 
+                    I live in Lower Jasaan, Misamis Oriental, and I am dedicated to creating professional, high-performance applications.
+                </p>
+                <div class="details-list">
+                    <div class="detail-item"><strong>Age</strong><span>22 Years Old</span></div>
+                    <div class="detail-item"><strong>Location</strong><span>Lower Jasaan, Misamis Oriental</span></div>
+                    <div class="detail-item"><strong>Education</strong><span>USTP Student</span></div>
+                    <div class="detail-item"><strong>Focus</strong><span>Full Stack Development</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="container">
+        <h2 class="section-title">Selected Works</h2>
+        <div class="grid" id="projectGrid">
+            
+            <article class="card" onclick="openModal('v1')">
+                <div class="work-video-box">
+                    <video muted loop autoplay playsinline><source src="video1.mp4" type="video/mp4"></video>
+                </div>
+                <div class="card-content">
+                    <div class="tag">Brain Bees</div>
+                    <h3>A Learning System for Kids</h3>
+                    <p>Engaging, Colorful, Friendly Kids UI, Gamified Quizzes</p>
+                </div>
+            </article>
+
+            <article class="card" onclick="openModal('v2')">
+                <div class="work-video-box">
+                    <video muted loop autoplay playsinline><source src="video2.mp4" type="video/mp4"></video>
+                </div>
+                <div class="card-content">
+                    <div class="tag">Inventory System</div>
+                    <h3>Inventory Management</h3>
+                    <p>Dual-user system for product requests and admin approval.</p>
+                </div>
+            </article>
+
+            <article class="card" onclick="openModal('v3')">
+                <div class="work-video-box">
+                    <video muted loop autoplay playsinline><source src="video3.mp4" type="video/mp4"></video>
+                </div>
+                <div class="card-content">
+                    <div class="tag">Mobile App</div>
+                    <h3>Brain Bee Mobile</h3>
+                    <p>Gamified Quizzes and Mobile Application for Kids.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <div id="videoModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <video id="modalVideo" controls autoplay playsinline>
+                <source src="" type="video/mp4">
+            </video>
+            <div class="modal-info">
+                <h3 id="modalTitle">Project Title</h3>
+                <p id="modalText">Description goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close-image-modal">&times;</span>
+        <div class="modal-content">
+            <img id="fullImage" src="" alt="Full Achievement Photo">
+            <div class="modal-info">
+                <h3 id="imageTitle">Achievement Title</h3>
+                <p id="imageText">Achievement description.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="achievements" class="container bg-section">
+        <h2 class="section-title">Achievements</h2>
+        <div class="grid">
+            
+            <article class="achievement-card" onclick="openImageModal('a1')">
+                <div class="achievement-img-box">
+                    <img src="achievement1.jpg" alt="Lambigit Event CDO">
+                </div>
+                <div class="achievement-content">
+                    <span class="year-tag">2026</span>
+                    <h4>Lambigit Event | CDO Limketkai</h4>
+                    <p>Participated in the Lambigit Event held at Limketkai Center, Cagayan de Oro.</p>
+                </div>
+            </article>
+
+            <article class="achievement-card" onclick="openImageModal('a2')">
+                <div class="achievement-img-box">
+                    <img src="achievement1.jpg" alt="Award 2">
+                </div>
+                <div class="achievement-content">
+                    <span class="year-tag">2025</span>
+                    <h4>Lambigit Event | CDO Limketkai</h4>
+                    <p>Participated in the Lambigit Event held at Limketkai Center, Cagayan de Oro.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="socials">
+            <a href="https://www.instagram.com/jikensisrael/">Instagram</a><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Email</a><a href="https://www.facebook.com/wizkenjixx666/">Facebook</a>
+        </div>
+        <p class="copyright">&copy; 2026 Ken Jbril S. Nalagon. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Slideshow Logic
+        let sIdx = 0;
+        function runSlides() {
+            let s = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < s.length; i++) s[i].style.display = "none";
+            sIdx++; if (sIdx > s.length) sIdx = 1;
+            s[sIdx-1].style.display = "block";
+            setTimeout(runSlides, 3000);
+        }
+        runSlides();
+
+        // Video Modal Logic
+        const videoModal = document.getElementById("videoModal");
+        const modalVid = document.getElementById("modalVideo");
+        const pData = {
+            v1: { src: "video1.mp4", title: "Brain Bees Learning System", desc: "A Gamified Hybrid Web-Mobile Application for enhancing English literacy and math proficiency." },
+            v2: { src: "video2.mp4", title: "Inventory Management System", desc: "This system features a workflow where Staff submit requests to add/remove products and the Admin approves or denies them." },
+            v3: { src: "video3.mp4", title: "Brain Bee Mobile App", desc: "Mobile-focused gamified learning platform for kids." }
+        };
+
+        function openModal(id) {
+            const d = pData[id];
+            modalVid.src = d.src;
+            document.getElementById("modalTitle").innerText = d.title;
+            document.getElementById("modalText").innerText = d.desc;
+            videoModal.style.display = "flex";
+            modalVid.load();
+            modalVid.play().catch(e => console.log("Play blocked"));
+        }
+
+        // Image Modal Logic
+        const imgModal = document.getElementById("imageModal");
+        const fullImg = document.getElementById("fullImage");
+        const aData = {
+            a1: { src: "achievement1.jpg", title: "Lambigit Event | CDO Limketkai", desc: "Engaging with the tech community at the Lambigit event in Cagayan de Oro." },
+            a2: { src: "achievement1.jpg", title: "Lambigit Event | CDO Limketkai", desc: "Engaging with the tech community at the Lambigit event in Cagayan de Oro." }
+        };
+
+        function openImageModal(id) {
+            const d = aData[id];
+            fullImg.src = d.src;
+            document.getElementById("imageTitle").innerText = d.title;
+            document.getElementById("imageText").innerText = d.desc;
+            imgModal.style.display = "flex";
+        }
+
+        // Universal Close Functionality
+        document.querySelector(".close-modal").onclick = () => { videoModal.style.display="none"; modalVid.pause(); }
+        document.querySelector(".close-image-modal").onclick = () => { imgModal.style.display="none"; }
+        
+        window.onclick = (e) => { 
+            if(e.target == videoModal) { videoModal.style.display="none"; modalVid.pause(); }
+            if(e.target == imgModal) { imgModal.style.display="none"; }
+        }
+    </script>
+</body>
+</html>
